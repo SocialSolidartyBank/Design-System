@@ -1,0 +1,83 @@
+{
+  "_meta": {
+    "name": "함세상 디자인 시스템 v6",
+    "description": "Figma Variables Import Export 플러그인용 flat 포맷. DTCG 풀버전은 tokens.json 참조.",
+    "spec": "design/DESIGN-SYSTEM.md"
+  },
+
+  "Colors": {
+    "primary": "#006CB7",
+    "primary-active": "#338BC9",
+    "primary-pale": "#E6F1FA",
+    "dark-blue": "#26257C",
+    "dark-blue-active": "#3D3CA0",
+    "ink-deep": "#0A1E33",
+    "ink": "#1A1B1F",
+    "canvas": "#FFFFFF",
+    "light-grey": "#ECF0F3",
+    "body": "#454745",
+    "grey": "#7B7875",
+    "sky-blue": "#58C5FF",
+    "sky-blue-light": "#CDEAFF",
+    "on-primary": "#FFFFFF",
+    "on-dark-blue": "#FFFFFF",
+    "on-ink": "#FFFFFF",
+    "on-sky-blue": "#0A1E33",
+    "positive": "#00A775",
+    "warning": "#FAA41A",
+    "negative": "#F16A26"
+  },
+
+  "Typography/Korean (Pretendard)": {
+    "h1":          { "fontSize": 64, "fontWeight": 800, "lineHeight": "115%", "letterSpacing": "-2%" },
+    "h2":          { "fontSize": 56, "fontWeight": 700, "lineHeight": "118%", "letterSpacing": "-2%" },
+    "h3":          { "fontSize": 40, "fontWeight": 700, "lineHeight": "125%", "letterSpacing": "-2%" },
+    "h4":          { "fontSize": 27, "fontWeight": 700, "lineHeight": "135%", "letterSpacing": "-2%" },
+    "body":        { "fontSize": 18, "fontWeight": 400, "lineHeight": "170%", "letterSpacing": "-2%" },
+    "body-strong": { "fontSize": 18, "fontWeight": 600, "lineHeight": "170%", "letterSpacing": "-2%" },
+    "caption":     { "fontSize": 16, "fontWeight": 400, "lineHeight": "160%", "letterSpacing": "-2%" },
+    "button":      { "fontSize": 16, "fontWeight": 600, "lineHeight": "150%", "letterSpacing": "-2%" }
+  },
+
+  "Typography/English (Satoshi)": {
+    "h1":          { "fontSize": 80, "fontWeight": 700, "lineHeight": "108%", "letterSpacing": "-3%" },
+    "h2":          { "fontSize": 64, "fontWeight": 700, "lineHeight": "110%", "letterSpacing": "-2.5%" },
+    "h3":          { "fontSize": 40, "fontWeight": 700, "lineHeight": "120%", "letterSpacing": "-1.5%" },
+    "h4":          { "fontSize": 30, "fontWeight": 600, "lineHeight": "130%", "letterSpacing": "-1%" },
+    "body":        { "fontSize": 20, "fontWeight": 400, "lineHeight": "160%", "letterSpacing": "0" },
+    "body-strong": { "fontSize": 20, "fontWeight": 600, "lineHeight": "160%", "letterSpacing": "0" },
+    "caption":     { "fontSize": 15, "fontWeight": 400, "lineHeight": "155%", "letterSpacing": "0" }
+  },
+
+  "Spacing": {
+    "xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24,
+    "2xl": 32, "3xl": 48, "4xl": 64, "5xl": 96, "6xl": 128, "7xl": 160
+  },
+
+  "Radius": {
+    "md": 12, "lg": 16, "xl": 24, "2xl": 32, "pill": 9999
+  },
+
+  "Elevation": {
+    "none": "none",
+    "card-soft": "0 2px 8px rgba(10,30,51,0.04)",
+    "card-hero": "0 4px 16px rgba(10,30,51,0.08), 0 24px 64px rgba(10,30,51,0.12)",
+    "full-card": "0 8px 32px rgba(10,30,51,0.18)"
+  },
+
+  "Components": {
+    "button-primary":   { "bg": "#006CB7", "text": "#FFFFFF", "padding": "12 24", "radius": 24 },
+    "button-dark":      { "bg": "#26257C", "text": "#FFFFFF", "padding": "12 24", "radius": 24 },
+    "button-sky":       { "bg": "#58C5FF", "text": "#0A1E33", "padding": "12 24", "radius": 24 },
+    "button-white":     { "bg": "#FFFFFF", "text": "#006CB7", "padding": "12 24", "radius": 24 },
+    "card-default":     { "bg": "#FFFFFF", "text": "#1A1B1F", "padding": 32, "radius": 24 },
+    "card-soft":        { "bg": "#ECF0F3", "text": "#1A1B1F", "padding": 32, "radius": 24 },
+    "card-primary":     { "bg": "#006CB7", "text": "#FFFFFF", "padding": 32, "radius": 24 },
+    "card-dark-blue":   { "bg": "#26257C", "text": "#FFFFFF", "padding": 32, "radius": 24 },
+    "card-ink":         { "bg": "#0A1E33", "text": "#FFFFFF", "padding": 32, "radius": 24 },
+    "apply-card":       { "bg": "#FFFFFF", "padding": 48, "radius": 24, "shadow": "card-hero" },
+    "step-circle":      { "bg": "#006CB7", "text": "#FFFFFF", "size": 48, "fontSize": 24, "fontWeight": 700, "radius": "pill" },
+    "text-input":       { "bg": "#ECF0F3", "padding": "16 24", "radius": 12 },
+    "full-card":        { "bg": "#0A1E33", "text": "#FFFFFF", "padding": "96 64", "radius": 32, "shadow": "full-card" }
+  }
+}

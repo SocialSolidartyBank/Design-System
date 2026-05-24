@@ -1,0 +1,28 @@
+{
+  "name": "bss-design-system",
+  "private": true,
+  "version": "0.1.0",
+  "description": "함세상 Design System — tokens · UI · recipes (Figma 양방향, shadcn registry 호환)",
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "tokens": "node scripts/build-tokens.mjs",
+    "registry": "node scripts/build-registry.mjs",
+    "build": "pnpm tokens && pnpm -r build && pnpm registry",
+    "dev": "pnpm -r --parallel dev",
+    "sb": "pnpm --filter storybook dev",
+    "sb:build": "pnpm --filter storybook build-storybook",
+    "sync:figma": "node scripts/sync-figma.mjs",
+    "clean": "pnpm -r exec rm -rf dist && rm -rf registry apps/storybook/storybook-static"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9"
+  }
+}

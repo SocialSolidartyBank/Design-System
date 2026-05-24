@@ -1,0 +1,77 @@
+/* @bss-ds/recipes — composed pattern styles */
+/* requires: import "@bss-ds/tokens/tokens.css"; */
+
+/* ─── HeroApplyCard ─── */
+.bss-hero-apply {
+  background: var(--color-light-grey);
+  padding: var(--space-7xl) var(--space-xl);
+  display: flex;
+  justify-content: center;
+}
+.bss-hero-apply-inner {
+  width: 100%;
+  max-width: 560px;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  padding: var(--space-3xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card-hero);
+}
+.bss-hero-apply-title {
+  font-family: var(--font-kr);
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 135%;
+  letter-spacing: -0.02em;
+  color: var(--color-ink-deep);
+  margin: 0 0 var(--space-lg);
+}
+.bss-hero-apply-desc {
+  font-family: var(--font-kr);
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: -0.02em;
+  color: var(--color-body);
+  margin: 0 0 var(--space-2xl);
+}
+.bss-hero-apply-submit {
+  margin-top: var(--space-lg);
+  width: 100%;
+}
+
+/* ─── FullCardSection (ink-deep 라운드박스 섹션) ─── */
+.bss-full-card {
+  background: var(--color-canvas);
+  padding: var(--space-5xl) var(--space-xl);
+  display: flex;
+  justify-content: center;
+}
+.bss-full-card-inner {
+  width: 100%;
+  max-width: 1200px;
+  background: var(--color-ink-deep);
+  color: var(--color-canvas);
+  padding: var(--space-5xl) var(--space-4xl);
+  border-radius: 32px; /* radius.2xl */
+  box-shadow: 0 8px 32px rgba(10, 30, 51, 0.18); /* elevation.full-card */
+}
+.bss-full-card-title {
+  font-family: var(--font-kr);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 118%;
+  letter-spacing: -0.02em;
+  color: var(--color-canvas);
+  margin: 0 0 var(--space-lg);
+}
+.bss-full-card-emphasis {
+  color: var(--color-sky-blue);
+}
+.bss-full-card-body {
+  font-family: var(--font-kr);
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: -0.02em;
+  color: var(--color-light-grey);
+  margin: 0;
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@bss-ds/tokens",
+  "version": "0.1.0",
+  "description": "함세상 디자인 토큰 — 색·간격·타이포·radius·elevation",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./tokens.css": "./src/tokens.css",
+    "./tailwind-preset": "./tailwind.preset.cjs",
+    "./guidelines": "./guidelines/Guidelines.md"
+  },
+  "files": [
+    "dist",
+    "src/tokens.css",
+    "src/index.ts",
+    "tailwind.preset.cjs",
+    "guidelines"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}

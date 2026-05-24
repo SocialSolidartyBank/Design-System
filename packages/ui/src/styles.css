@@ -1,0 +1,154 @@
+/* @bss-ds/ui — semantic classes using @bss-ds/tokens CSS variables */
+/* requires: import "@bss-ds/tokens/tokens.css"; */
+
+/* ─── Button ─── */
+.bss-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-xl);
+  border: 0;
+  cursor: pointer;
+  font-family: var(--font-kr);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  transition: background-color 120ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.bss-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.bss-btn-primary { background: var(--color-primary); color: #fff; }
+.bss-btn-primary:hover:not(:disabled) { background: var(--color-primary-active); }
+.bss-btn-dark    { background: var(--color-dark-blue); color: #fff; }
+.bss-btn-dark:hover:not(:disabled) { background: var(--color-dark-blue-active); }
+.bss-btn-sky     { background: var(--color-sky-blue); color: var(--color-ink-deep); }
+.bss-btn-sky:hover:not(:disabled) { background: var(--color-sky-blue-light); }
+.bss-btn-white   { background: var(--color-canvas); color: var(--color-primary); }
+.bss-btn-white:hover:not(:disabled) { background: var(--color-light-grey); }
+
+/* ─── Fieldset ─── */
+.bss-fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+.bss-fieldset-legend {
+  font-family: var(--font-kr);
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 135%;
+  letter-spacing: -0.02em;
+  color: var(--color-ink-deep);
+  margin-bottom: var(--space-sm);
+}
+
+/* ─── Field (label + control + helper/error) ─── */
+.bss-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.bss-field-label {
+  font-family: var(--font-kr);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--color-ink-deep);
+}
+.bss-field-helper {
+  font-family: var(--font-kr);
+  font-size: 14px;
+  color: var(--color-grey);
+  letter-spacing: -0.02em;
+}
+
+/* ─── Input ─── */
+.bss-input {
+  width: 100%;
+  background: var(--color-light-grey);
+  color: var(--color-ink);
+  border: 0;
+  outline: 0;
+  padding: var(--space-lg) var(--space-xl);
+  border-radius: var(--radius-md);
+  font-family: var(--font-kr);
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: -0.02em;
+}
+.bss-input::placeholder { color: var(--color-grey); }
+.bss-input:focus { outline: 2px solid var(--color-primary); outline-offset: -2px; }
+.bss-input[aria-invalid="true"] { outline: 2px solid var(--color-negative); outline-offset: -2px; }
+
+/* ─── Checkbox ─── */
+.bss-checkbox-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  font-family: var(--font-kr);
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+.bss-checkbox-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.bss-checkbox-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: var(--color-light-grey);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background-color 120ms ease;
+}
+.bss-checkbox-input:checked + .bss-checkbox-box {
+  background: var(--color-primary);
+}
+.bss-checkbox-input:checked + .bss-checkbox-box::after {
+  content: "";
+  width: 10px;
+  height: 6px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg) translate(1px, -1px);
+}
+.bss-checkbox-input:focus-visible + .bss-checkbox-box {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ─── CheckGroup ─── */
+.bss-check-group {
+  display: flex;
+  gap: var(--space-md);
+}
+.bss-check-group-vertical { flex-direction: column; }
+.bss-check-group-horizontal { flex-direction: row; flex-wrap: wrap; }
+
+/* ─── ErrorText ─── */
+.bss-error-text {
+  font-family: var(--font-kr);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--color-negative);
+}
