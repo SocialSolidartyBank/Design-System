@@ -1,6 +1,20 @@
 /* @bss-ds/ui — semantic classes using @bss-ds/tokens CSS variables */
 /* requires: import "@bss-ds/tokens/tokens.css"; */
 
+/* ─── reset (box-sizing) ─── */
+.bss-btn,
+.bss-fieldset,
+.bss-fieldset *,
+.bss-field,
+.bss-field *,
+.bss-input,
+.bss-checkbox-wrap,
+.bss-checkbox-box,
+.bss-check-group,
+.bss-check-group * {
+  box-sizing: border-box;
+}
+
 /* ─── Button ─── */
 .bss-btn {
   display: inline-flex;

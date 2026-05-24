@@ -13,12 +13,14 @@
       "require": "./dist/index.cjs"
     },
     "./tokens.css": "./src/tokens.css",
+    "./fonts.css": "./src/fonts.css",
     "./tailwind-preset": "./tailwind.preset.cjs",
     "./guidelines": "./guidelines/Guidelines.md"
   },
   "files": [
     "dist",
     "src/tokens.css",
+    "src/fonts.css",
     "src/index.ts",
     "tailwind.preset.cjs",
     "guidelines"

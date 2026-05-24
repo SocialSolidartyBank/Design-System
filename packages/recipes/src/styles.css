@@ -1,6 +1,13 @@
 /* @bss-ds/recipes — composed pattern styles */
 /* requires: import "@bss-ds/tokens/tokens.css"; */
 
+.bss-hero-apply,
+.bss-hero-apply *,
+.bss-full-card,
+.bss-full-card * {
+  box-sizing: border-box;
+}
+
 /* ─── HeroApplyCard ─── */
 .bss-hero-apply {
   background: var(--color-light-grey);

@@ -1,0 +1,23 @@
+/* @bss-ds/tokens/fonts.css — Pretendard (한글) + Satoshi (영문/숫자)
+ * 사용: import "@bss-ds/tokens/fonts.css";
+ * tokens.css 의 var(--font-kr) / var(--font-en) 이 실제로 보이려면 이 CSS도 함께 로드.
+ *
+ * Pretendard:  https://github.com/orioncactus/pretendard (OFL-1.1)
+ * Satoshi:     https://www.fontshare.com/fonts/satoshi  (Fontshare 라이선스)
+ */
+
+/* Pretendard Variable — 한글 본문/타이틀 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css");
+
+/* Satoshi — 영문 + 숫자 (Fontshare CDN) */
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800&display=swap");
+
+/* 시스템에 폰트가 적용되도록 body 기본 패밀리 지정 */
+html, body {
+  font-family: var(--font-kr);
+  font-feature-settings: "ss06" 1;
+}
+
+:lang(en) {
+  font-family: var(--font-en);
+}

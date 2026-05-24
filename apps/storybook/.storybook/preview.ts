@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/react";
 import "@bss-ds/tokens/tokens.css";
+import "@bss-ds/tokens/fonts.css";
 import "@bss-ds/ui/styles.css";
 import "@bss-ds/recipes/styles.css";
 
